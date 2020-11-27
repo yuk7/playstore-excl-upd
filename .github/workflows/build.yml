@@ -16,9 +16,10 @@ jobs:
       run: make test
     - name: make
       run: make
+    - name: remove .git
+      run: rm -rf .git
     - name: Upload zip file to artifact
       uses: actions/upload-artifact@v1
       with:
           name: all
           path: ./
-      
