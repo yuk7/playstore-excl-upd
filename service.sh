@@ -14,6 +14,7 @@ do
     while read PKGNAME
     do
         if [ -n "$PKGNAME" ]; then
+            ./sqlite3 "$PS_DATA_DIR/databases/auto_update.db" "DELETE FROM auto_update WHERE pk='${PKGNAME}'"
             ./sqlite3 "$PS_DATA_DIR/databases/library.db" "DELETE FROM ownership WHERE doc_id='${PKGNAME}'"
             ./sqlite3 "$PS_DATA_DIR/databases/localappstate.db" "DELETE FROM appstate WHERE package_name='${PKGNAME}'"
         fi
