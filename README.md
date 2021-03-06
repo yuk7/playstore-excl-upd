@@ -16,6 +16,7 @@ A Magisk module for excludes apps from update lists of the Play Store
 
 ## How to Use
 #### 0. If possible, disable the auto-update of Play Store.
+v2.0 or higher forces automatic updates to be disabled.
 
 #### 1. Install [zip](https://github.com/yuk7/playstore-excl-upd/releases/latest) from Magisk Manager.
 
