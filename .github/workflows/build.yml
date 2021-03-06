@@ -11,7 +11,7 @@ jobs:
     - name: setup requirements
       run: |
         sudo apt update
-        sudo apt install bsdtar
+        sudo apt install libarchive-tools
     - name: make test
       run: make test
     - name: make
