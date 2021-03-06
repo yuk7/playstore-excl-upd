@@ -43,5 +43,11 @@ END
 END
     am force-stop ${PS_PKG_NAME}
     fi
+
+    if grep -q "<boolean name=\"auto_update_enabled\" value=\"true\" />" "$PS_DATA_DIR/shared_prefs/finsky.xml"; then
+        sed -i.bak -e 's#<boolean name="auto_update_enabled" value="true" />#<boolean name="auto_update_enabled" value="false" />#g' "$PS_DATA_DIR/shared_prefs/finsky.xml"
+        am force-stop ${PS_PKG_NAME}
+    fi
+
     sleep $INTERVAL
 done
