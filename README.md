@@ -21,7 +21,7 @@ v2.0 or higher forces automatic updates to be disabled.
 #### 1. Install [zip](https://github.com/yuk7/playstore-excl-upd/releases/latest) from Magisk Manager.
 
 #### 2. Make a list of apps to exclude.
-Create a list of apps to exclude to `/cache/peulist.txt`.
+Create a list of apps to exclude to `/data/cache/peulist.txt`.
 The list is separated by line breaks.
 
 e.g. `/cache/peulist.txt`:
