@@ -1,5 +1,5 @@
 #!/system/bin/sh
-PKG_LIST_FILE=/cache/peulist.txt
+PKG_LIST_FILE=/data/cache/peulist.txt
 PS_PKG_NAME=com.android.vending
 PS_DATA_DIR=/data/data/${PS_PKG_NAME}
 INTERVAL=60
