@@ -24,7 +24,7 @@ v2.0 or higher forces automatic updates to be disabled.
 Create a list of apps to exclude to `/data/cache/peulist.txt`.
 The list is separated by line breaks.
 
-e.g. `/cache/peulist.txt`:
+e.g. `/data/cache/peulist.txt`:
 ```
 com.github.android
 com.google.android.gm
