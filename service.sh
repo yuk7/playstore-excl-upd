@@ -1,10 +1,10 @@
 #!/system/bin/sh
-PKG_LIST_FILE=/data/cache/peulist.txt
+MODDIR=${0%/*}
+PKG_LIST_FILE=${MODDIR}/peulist.txt
 PS_PKG_NAME=com.android.vending
 PS_DATA_DIR=/data/data/${PS_PKG_NAME}
 INTERVAL=60
 
-MODDIR=${0%/*}
 cd $MODDIR
 LF="
 "

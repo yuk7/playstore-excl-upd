@@ -18,7 +18,7 @@ esac
 
 
 unzip -o "$ZIPFILE" -d $TMPDIR >&2
-cp -af "$TMPDIR/module.prop" "$TMPDIR/service.sh" "$MODPATH/" || abort "Failed copy module files."
+cp -af "$TMPDIR/module.prop" "$TMPDIR/service.sh" "$TMPDIR/peulist.txt" "$MODPATH/" || abort "Failed copy module files."
 cp -af "$SQLITE_BIN_DIR/sqlite3" "$MODPATH/" || abort "Failed copy binary for $ARCH."
 set_perm "${MODPATH}/service.sh" 0 0 0755
 set_perm "${MODPATH}/sqlite3" 0 0 0755
